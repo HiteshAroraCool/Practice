@@ -1,3 +1,4 @@
+// Documentation: https://devdocs.io/javascript/
 // comment
 /* 
 comment
@@ -29,3 +30,35 @@ var string = "My \"String\" 'this' "
 string = `"My 'new' String"`
 console.log(string)
 
+Stringlength = string.length
+
+console.log('Length of String is =', Stringlength, string[5]) // [5:10] not working
+
+function fun(string) {
+    console.log(string)
+}
+fun(string)
+fun(array) // if called before declear 'undefined' is output not an error
+var array = ['this', 1, ['nested', 'array']]
+array.push(['new','something'])
+fun(array)
+array.pop()
+fun(array)
+array.shift()
+array.unshift(5)
+fun(array)
+Without_var_keyword = 5
+console.log("This language makes the rule but don't enforce them ", Without_var_keyword)
+function fun1(no_params_needed) {
+    output = ""
+    if (typeof Without_var_keyword != "undefined") {
+        Without_var_keyword += 10
+        Without_var_keyword += " let's see "
+        Without_var_keyword += 10
+        output += Without_var_keyword
+    } else {
+        console.log("We can delcear global varible inside the function. WHAT!")
+    }
+    console.log(output)
+}
+fun1()
