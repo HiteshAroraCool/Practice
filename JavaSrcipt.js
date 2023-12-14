@@ -50,7 +50,7 @@ fun(array)
 Without_var_keyword = 5
 console.log("This language makes the rule but don't enforce them ", Without_var_keyword)
 function fun1(no_params_needed) {
-    output = ""
+    output = ""  // if 'var' before varible is written, it's local scope without it's global
     if (typeof Without_var_keyword != "undefined") {
         Without_var_keyword += 10
         Without_var_keyword += " let's see "
@@ -59,6 +59,16 @@ function fun1(no_params_needed) {
     } else {
         console.log("We can delcear global varible inside the function. WHAT!")
     }
-    console.log(output)
+    //console.log(output)
+    return output
 }
 fun1()
+console.log(output)
+
+// local varible takes precedent over global varible
+var output_varible = "T-Shirt"
+function local(new_varible) {
+    const output_varible = "Sweater"
+    return output_varible
+}
+console.log();("Local:", local(), output_varible)
