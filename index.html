@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
-    <style src="style.css"></style>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script>
     </head>
-    <title>JS DOM Manipulation Part 1</title>
-</head>
-<body>
-    <div class="continer">
-        <h1>Favourite Movie Franchise</h1>
-        <ul>
-            <li>The Matrix</li>
-            <li>Star Wars</li>
-            <li>Harry Potter</li>
-            <li>Lord of Ring</li>
-            <li>Marvel</li>
-        </ul>
-    </div>
-</body>
+    <body>
+        <h1>People entered:</h1>
+        <h2 id="count-el">0</h2>
+        <!-- Create a INCREMENT button with the id="increment-btn" -->
+        <botton id="increment-btn" onclick="increment()">INCREMENT</botton>
+        
+    </body>
 </html>
-
