@@ -1,0 +1,29 @@
+img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 15px auto;
+  }
+  button {
+    background: white;
+    color: black;
+    border: 1px soild black;
+    font-weight: sold;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    font-weight: 600;
+    width: 200px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #error {
+    font-weight: soild;
+    color: red;
+  }
